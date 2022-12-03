@@ -1,8 +1,10 @@
 include("./src/day01.jl")
 include("./src/day02.jl")
+include("./src/day03.jl")
 
 import .Day01
 import .Day02
+import .Day03
 
 solutions = Dict(
 		 "1AE" => Day01.partA("input/example01.txt"),
@@ -13,6 +15,10 @@ solutions = Dict(
 		 "2A" => Day02.partA("input/02.txt"),
 		 "2BE" => Day02.partB("input/example02.txt"),
 		 "2B" => Day02.partB("input/02.txt"),
+		 "3AE" => Day03.partA("input/example03.txt"),
+		 "3A" => Day03.partA("input/03.txt"),
+		 "3BE" => Day03.partB("input/example03.txt"),
+		 "3B" => Day03.partB("input/03.txt"),
 		 )
 
 for line in eachline()
